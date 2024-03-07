@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Vast+Shadow&display=swap'); 
+
+
+.wrapper {
+    height: 682px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;  
+    padding: 10px;
+}
+
+.title {
+    font-family: "Climate Crisis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #75FBFD;
+    text-transform: uppercase;
+   letter-spacing: 10px;
+   /* font-size: 3rem; */
+}
+
+.wrapperTitles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainTitle {
+    font-family: "Climate Crisis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #75FBFD;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0px;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.wrapperJobTitle{
+    display: flex;
+    flex-direction: flex;
+    justify-content: end;
+}
+
+.jobTile{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.87);
+}
+/* .containerTileJob {
+    width: 398px;
+    border: 4px solid white;
+} */
+
+.wrapperScrollDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.87);
+    height: 100px;
+    justify-content: center;
+}
+.scrollDown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border: 5px solid white;
+    animation: sized  .9s alternate-reverse infinite;
+}
+.scrollDown > p{
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+@keyframes sized {
+    from {
+        width: 70px;
+        height: 70px;
+    }
+    to {
+        width: 80px;
+        height: 80px;
+    }
+  }
