@@ -7,7 +7,7 @@ function About  () {
             <div className={style.containerDescription}>
                 <p className={style.introduction}>developer front-end junior with experience using javascript, react, redux, node js, html, css, jest and firebase. Passionate about technology and share new ideas to improve web development.</p>
             </div>
-            <a href='#' download >baixar  cs</a>
+            <a href='./file/cv.pdf' download >baixar  cs</a>
         </div>
     )
 }
