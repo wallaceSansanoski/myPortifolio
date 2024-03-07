@@ -8,7 +8,7 @@ function Home () {
         <div className={style.wrapper}> 
                 <h2 className={style.title}>hi there.</h2>
                 <div className={style.wrapperTitles}>
-                <h1 className={style.mainTitle}>i`m wallace.</h1>
+                <h1 className={style.mainTitle}>i`m wallac<span className={style.rotetaWord}>e.</span></h1>
                     <div className={style.wrapperJobTitle}>
                         <div className={style.containerTileJob}>
                              <p className={style.jobTile}>front-end developer junior</p>

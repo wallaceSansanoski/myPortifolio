@@ -16,6 +16,10 @@
     justify-content: center;
 }
 
+.containerStack:hover {
+    box-shadow: 2px 2px white;
+}
+
 .containerStack::after {
     position: absolute;
     bottom: 0;
