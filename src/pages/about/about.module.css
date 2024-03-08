@@ -6,7 +6,7 @@
 }
 .introduction {
     color: aliceblue;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
