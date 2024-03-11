@@ -3,19 +3,16 @@ import Description from './pages/description/description'
 import Home from './pages/home/home'
 import Contacts from './pages/contacts/contact'
 import ScrolDownAndUp from './Components/scrolDownAndUp/ScrolDownAndUp'
-import { useRef, useContext } from 'react'
-import { ContextScrool } from './Context/ContextScrool'
+import Project from './pages/projects/Project'
 
 function App() {
-
-  const { scrool } = useContext(ContextScrool)
 
   return (
     <div className='main'>
       <Home/>
       <Description/>
+      <Project/>
       <Contacts/>
-     {/* {!scrool ?  <ScrolDownAndUp /> : null} */}
      <ScrolDownAndUp /> 
     </div>
   )

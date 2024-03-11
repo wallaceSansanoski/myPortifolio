@@ -5,16 +5,18 @@ import { ContextScrool } from "../../Context/ContextScrool";
 
 function Home() {
 
-    const { setScrool } = useContext(ContextScrool)
+    const { scrool, setScrool } = useContext(ContextScrool)
     const ref = useRef()
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const observe = entries[0]
             setScrool(observe.isIntersecting)
+        },
+        {
+            threshold : 0.1
         })
         observer.observe(ref.current)
     }, [])
-
 
     return (
         <div

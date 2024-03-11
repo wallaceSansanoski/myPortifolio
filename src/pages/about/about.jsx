@@ -1,6 +1,10 @@
 import style from './about.module.css'
+import { ContextScrool } from '../../Context/ContextScrool'
+import { useContext, useRef, useEffect } from 'react'
+
 
 function About () {
+
     return (
         <div className={style.aboutContainer}>
             <h1 className={style.title}>about</h1>

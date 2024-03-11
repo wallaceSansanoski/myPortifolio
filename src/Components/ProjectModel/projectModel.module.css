@@ -1,0 +1,18 @@
+.container {
+    max-width: 300px;
+    border: 1px solid white;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    transform: translate(0%);
+    transition: 2s;
+}
+
+.containerImage{
+    width: 100%;
+}
+.img {
+    width: 200px;
+    background-position: center;
+    background-size: contain;
+}

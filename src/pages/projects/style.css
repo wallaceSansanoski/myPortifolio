@@ -1,0 +1,8 @@
+/* .close {
+    transform: translate(150%);
+ 
+} */
+.display {
+    transform: translate(150%);
+    transition: 1s;
+}
