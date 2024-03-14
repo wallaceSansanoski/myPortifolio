@@ -2,7 +2,6 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 import style from './home.module.css'
 import { useRef, useEffect,useContext } from "react";
 import { ContextScrool } from "../../Context/ContextScrool";
-import resume from '../../assets/wallaceCv.pdf'
 
 function Home() {
 
@@ -31,8 +30,6 @@ function Home() {
 
             <div
                 className={style.wrapperScrollDown}>
-                    <button><a href={resume} download >download resume</a></button>
-                    <img src={'../../assets/resumeWallace.pdf'}></img>
                 <div
                     className={style.scrollDown}>
                     <p>scroll</p>
