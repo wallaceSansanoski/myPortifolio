@@ -8,41 +8,19 @@ const Project = () => {
     const ref= useRef()
     const  [ isIntersecting, setIsIntersection ] = useState(false)
 
-    // useEffect(() => {
-
-    //     const observer = new IntersectionObserver(entries => {
-     
-    //         entries.forEach(el=> {
-    //             el.target.classList.toggle('display', el.target)
-    //         })
-        
-      
-
-    //     } ,{threshold : 1})
-
-    //     Array.from(ref.current.children).forEach(el => {
-    //         observer.observe(el)
-    //     })
-
-    // }, [ref.current])
-
     useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(el => {
+            if(el.isIntersecting) {
+                el.target.classList.add('display')
+            }
+            el.target.classList.remove('display')
+        })
+           
+        } ,{threshold : 1})
 
-        Array.from(ref.current.children).forEach(el => {
-            const observer = new IntersectionObserver(entry => {
-                entry.forEach(entries => {
-                        entries.target.classList.toggle('display',entries.isIntersecting)
-                        console.log(entries.target)
-                })
-                // if(entry[0].isIntersecting){
-                //     entry[0].target.classList.toggle('display')
-                // }
-                // console.log(entry[0].isIntersecting)
-            }, { threshold : 1})
-                observer.observe(el)
-            })
-    },[])
-
+        observer.observe(Array.from(ref.current.children)[0])
+    }, [])
 
     return (
         <div className={style.wrapper}>

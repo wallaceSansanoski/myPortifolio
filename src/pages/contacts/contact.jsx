@@ -25,7 +25,7 @@ const contacts = [
 function Contacts() {
     return (
         <div className={style.containerContact}>
-            <h1 className={style.title}>Contacts</h1>
+            <h1 className={style.title}>contacts</h1>
             <div className={style.contacts}>
                 {contacts.map(value => {
                     return (
