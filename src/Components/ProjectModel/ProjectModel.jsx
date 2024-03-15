@@ -1,7 +1,7 @@
 import style from './projectModel.module.css'
 import { useRef, useEffect } from 'react';
 
-const ProjectModel = ({project : {name, file, description, stacks}}) => {
+const ProjectModel = ({project : {name, file, github}}) => {
     //  const ref = useRef()
     // useEffect(() => {
 
@@ -28,7 +28,7 @@ const ProjectModel = ({project : {name, file, description, stacks}}) => {
                 </div>
                 <div className={style.wrapperBtn}>
                     <button className={style.socialMediaBtn}>Learn More</button>
-                    <button className={style.socialMediaBtn}>Git Repository</button>
+                    <button className={style.socialMediaBtn}><a href={github} target='_blank'>Github</a></button>
                 </div>
             </div>
         </div>

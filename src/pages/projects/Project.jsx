@@ -15,31 +15,36 @@ const Project = () => {
             name : 'Flappy Bird Challange',
             file: flappy,
             description : 'Play this classic and challange game',
-            stacks : ['JS', 'HTML', 'CSS']
+            stacks : ['JS', 'HTML', 'CSS'],
+            github : 'https://github.com/wallaceSansanoski/FlappyBird'
         },
         {
             name : 'Real Time Chat APP',
             file: chat,
             description : 'Have a fun conversation using real time chat application.Register user can have concersation with many friend, share pictures and audio.',
-            stacks : ['React','React Context', 'React Router', 'Firebase','Firebase Auth', 'HTML', 'CSS']
+            stacks : ['React','React Context', 'React Router', 'Firebase','Firebase Auth', 'HTML', 'CSS'],
+            github : 'https://github.com/wallaceSansanoski/cool-chat'
         },
         {
             name : 'Blog',
             file: blog,
             description :'Intersting blog about programming made to programmer.Register user can add, delete, update and create new post to share new ideas',
-            stacks : ['React','React Context', 'React Router', 'Firebase', 'Firebase Auth', 'Firebase Store ', 'HTML', 'CSS']
+            stacks : ['React','React Context', 'React Router', 'Firebase', 'Firebase Auth', 'Firebase Store ', 'HTML', 'CSS'],
+            github : 'https://github.com/wallaceSansanoski/miniBlog'
         },
         {
             name : 'Weather Application',
             file: weather,
             description :'Cheack Forecasting today and five days ahead using this app.',
-            stacks : ['JS', 'Local Storage', 'HTML', 'CSS']
+            stacks : ['JS', 'Local Storage', 'HTML', 'CSS'],
+            github : 'https://github.com/wallaceSansanoski/weatherAPP'
         },
         {
             name : 'Random Team',
             file: randomMatch,
             description :'To have a fun game and have a balance competicion with, use this app  to balance team, record score and set timer',
-            stacks : ['React', 'React Router', 'Firebase', 'Firebase Auth','Firebase Store', 'HTML', 'CSS']
+            stacks : ['React', 'React Router', 'Firebase', 'Firebase Auth','Firebase Store', 'HTML', 'CSS'],
+            github : 'https://github.com/wallaceSansanoski/random-match'
         }
 
     ]

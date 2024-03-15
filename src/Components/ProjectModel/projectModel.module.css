@@ -1,11 +1,12 @@
 
 .container {
     width: 350px;
-    background-color: aliceblue;
+    background-color: #f8f2f2;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border-radius: 10px;
 }
 
 .nameProject {
@@ -34,12 +35,17 @@
 }
 
 .socialMediaBtn {
+    width: 100px;
     background-color: #27bc58;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     padding: 5px;
-    color: aliceblue;
     border: none;
+    color: aliceblue;
+}
+.socialMediaBtn > a {
+    text-decoration: none;
+    color: aliceblue;
 }
