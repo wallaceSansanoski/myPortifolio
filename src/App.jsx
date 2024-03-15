@@ -1,5 +1,4 @@
 import './App.css'
-import Description from './pages/description/description'
 import Home from './pages/home/home'
 import Contacts from './pages/contacts/contact'
 import ScrolDownAndUp from './Components/scrolDownAndUp/ScrolDownAndUp'

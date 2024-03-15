@@ -1,10 +1,8 @@
 import style from './projectModel.module.css'
 import { useRef, useEffect } from 'react';
 
-const ProjectModel = () => {
-
-    const ref = useRef()
-
+const ProjectModel = ({project : {name, file, description, stacks}}) => {
+    //  const ref = useRef()
     // useEffect(() => {
 
     //     const observer  = new IntersectionObserver(entries => {
@@ -21,14 +19,17 @@ const ProjectModel = () => {
 
     return (
         <div 
-            ref={ref}
+            // ref={ref}
             className={style.container}>
-            <h1>Name Project</h1>
+            <h1 className={style.nameProject}>{name}</h1>
             <div>
                 <div className={style.containerImage}>
-                    <img className={style.img} src='https://images.unsplash.com/photo-1633412802994-5c058f151b66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dWl8ZW58MHx8MHx8fDA%3D' alt='#' />
+                    <img className={style.img} src={file} alt='image project' />
                 </div>
-                <p>description of project and stack used to build it </p>
+                <div className={style.wrapperBtn}>
+                    <button className={style.socialMediaBtn}>Learn More</button>
+                    <button className={style.socialMediaBtn}>Git Repository</button>
+                </div>
             </div>
         </div>
     )

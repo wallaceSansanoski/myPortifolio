@@ -1,18 +1,45 @@
+
 .container {
-    max-width: 300px;
-    border: 1px solid white;
+    width: 350px;
     background-color: aliceblue;
     text-align: center;
-    border-radius: 20px;
-    transform: translate(0%);
-    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nameProject {
+    text-transform: uppercase;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .containerImage{
     width: 100%;
+    height: 300px;
+    margin: 30px 0px;
 }
 .img {
-    width: 200px;
-    background-position: center;
-    background-size: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wrapperBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.socialMediaBtn {
+    background-color: #27bc58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    color: aliceblue;
+    border: none;
 }
