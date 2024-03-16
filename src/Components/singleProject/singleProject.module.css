@@ -1,0 +1,16 @@
+.wrapper {
+    max-width: 800px ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: aliceblue;
+}
+
+.video {
+    width: 100%;
+}

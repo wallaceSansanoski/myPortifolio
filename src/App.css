@@ -1,5 +1,6 @@
 .main{
   max-width: 900px;
+  height: 100vh;
   margin: 0 auto ;
   position: relative;
   display: flex;
