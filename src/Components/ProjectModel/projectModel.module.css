@@ -1,11 +1,12 @@
 
 .container {
     width: 350px;
-    background-color: #f8f2f2;
-    text-align: center;
+    /* background-color: #f8f2f2; */
+    border: 4px solid #75FBFD;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     border-radius: 10px;
 }
 
@@ -13,17 +14,18 @@
     text-transform: uppercase;
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
 }
 
 .containerImage{
-    width: 100%;
+    width: 300px;
     height: 300px;
     margin: 30px 0px;
 }
 .img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: inherit;
 }
 
 .wrapperBtn {
@@ -44,8 +46,17 @@
     padding: 5px;
     border: none;
     color: aliceblue;
+    transition: 0.2s linear;
 }
 .socialMediaBtn > a {
     text-decoration: none;
     color: aliceblue;
+}
+
+.socialMediaBtn:hover  {
+    background-color: aliceblue;
+    color: #242424;
+}
+.socialMediaBtn:hover > a  {
+    color: #242424;
 }

@@ -18,7 +18,8 @@ const ProjectModel = ({ project: { name, file, github } }) => {
                     <button onClick={(e) => {
                         setNameProject(e.target.name)
                         setActive(true)
-                    }} name={name} className={style.socialMediaBtn}>
+                    }} name={name} 
+                    className={style.socialMediaBtn}>
                         Learn More
                     </button>
                     <button className={style.socialMediaBtn}><a href={github} target='_blank'>Github</a></button>

@@ -7,6 +7,9 @@ const SingleProject = () => {
 
     const  {setActive, nameProject } = useContext(ContextActiveLLink)
     const  { video, name, description, stacks }  = projectList.find(({name}) => nameProject === name)
+
+    console.log(stacks)
+
     return (
         <div className={style.wrapper}>
             <h1 className={style.title}>{name}</h1>
@@ -15,10 +18,16 @@ const SingleProject = () => {
                 controls
                 controlsList="nodownload nofullscreen"
                 disablePictureInPicture
+                autoPlay
+                muted
                 src={video}></video>
-                <p>{description}</p>
-                <p>{stacks}</p>
-            <button onClick={() => setActive(false)}>Back</button>
+                <p className={style.paragraph}>{description}</p>
+                <p className={style.paragraph}><span style={{color :'gold'}}>Stacks: </span>{stacks}</p>
+            <button 
+                onClick={() => setActive(false)}
+                className={style.btnBack}
+            >Back
+            </button>
         </div>
     )
 }

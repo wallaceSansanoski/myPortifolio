@@ -5,12 +5,47 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .title {
     color: aliceblue;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .video {
     width: 100%;
+}
+
+.btnBack {
+    width: 100px;
+    background-color: #27bc58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    color: aliceblue;
+    transition: 0.2s linear;
+}
+.btnBack:hover {
+    background-color: aliceblue;
+    color: #242424;
+}
+.paragraph{
+    color: aliceblue;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.containerStack {
+    display: flex;
+    gap: 6px;
+}
+
+.containerStack > p {
+    margin: 0px;
 }
